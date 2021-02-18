@@ -8,7 +8,7 @@ import bodyParser from 'body-parser'
 
 app.use(bodyParser.urlencoded({extended:false}))
 
-app.use(express.static('../frontend'));
+app.use(express.static('./public'));
 
 app.use(morgan('short'))
 
